@@ -9,7 +9,7 @@ module.exports = {
 
         try {
             await command.execute(interaction);
-            console.log('Running command!');
+            console.log(`Running ${interaction.commandName} command.`);
         } catch (error) {
             console.log(error);
             await interaction.reply({ 
